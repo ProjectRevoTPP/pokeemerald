@@ -228,7 +228,9 @@ bool8 SetUpFieldMove_Cut(void)
 
                 for (j = 0; j < 2; ++j)
                 {
+                    // clang-format off
                     if (sHyperCutStruct[i].unk2[j] == 0) break; // one line required to match -g
+                    // clang-format on
                     if (cutTiles[(u8)(sHyperCutStruct[i].unk2[j] - 1)] == FALSE)
                     {
                         tileCuttable = FALSE;

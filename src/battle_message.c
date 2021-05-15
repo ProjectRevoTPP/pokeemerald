@@ -2368,7 +2368,9 @@ static const u8* TryGetStatusString(u8 *src)
     statusPtr = status;
     for (i = 0; i < 8; i++)
     {
+        // clang-format off
         if (*src == EOS) break; // one line required to match -g
+        // clang-format on
         *statusPtr = *src;
         src++;
         statusPtr++;

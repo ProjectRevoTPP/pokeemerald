@@ -1566,7 +1566,9 @@ static s32 TrainerIdToRematchTableId(const struct RematchTrainer *table, u16 tra
     {
         for (j = 0; j < REMATCHES_COUNT; j++)
         {
+            // clang-format off
             if (table[i].trainerIds[j] == 0) break; // one line required to match -g
+            // clang-format on
             if (table[i].trainerIds[j] == trainerId)
                 return i;
         }
