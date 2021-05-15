@@ -2,23 +2,19 @@
 Language: Cpp
 BasedOnStyle: LLVM
 AlignAfterOpenBracket: AlwaysBreak
-AlignConsecutiveMacros: 'false'
+AlignConsecutiveMacros: true
 AlwaysBreakAfterReturnType: None
 BreakBeforeBinaryOperators: None
+AlignAfterOpenBracket: Align
+AlignEscapedNewlines: Left
+Cpp11BracedListStyle: false
+IndentCaseLabels: false
+UseTab: Never
+AllowShortIfStatementsOnASingleLine: false
 ColumnLimit: '0'
 SortIncludes: 'false'
-BraceWrapping:
-  AfterClass:      true
-  AfterControlStatement: true
-  AfterEnum:       true
-  AfterFunction:   true
-  AfterNamespace:  true
-  AfterObjCDeclaration: true
-  AfterStruct:     true
-  AfterUnion:      true
-  BeforeCatch:     true
-  BeforeElse:      true
-  IndentBraces:    true
-BreakBeforeBraces: Custom
+IndentWidth: 4
+SpaceBeforeParens: ControlStatements
+BreakBeforeBraces: Allman
 
 ...
