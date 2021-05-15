@@ -2369,7 +2369,9 @@ static const u8* TryGetStatusString(u8 *src)
     for (i = 0; i < 8; i++)
     {
         // clang-format off
+        /* *INDENT-OFF* */
         if (*src == EOS) break; // one line required to match -g
+        /* *INDENT-ON* */
         // clang-format on
         *statusPtr = *src;
         src++;
